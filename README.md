@@ -22,7 +22,7 @@ Add it to your `package.json`:
 ```json
 {
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:syncxbails"
+    "@whiskeysockets/baileys": "github:xvnsync/xbails"
   }
 }
 ```

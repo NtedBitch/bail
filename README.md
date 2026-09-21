@@ -25,7 +25,7 @@
   - [With QR Code](#with-qr-code)
   - [Connect With Pairing Code](#connect-with-pairing-code)
 - [Usage Examples](#usage-examples)
-  - [Sending a Message with Participant (ptcp: true)](#sending-a-message-with-participant-ptcp-true)
+  - [Sending a Message with Participant](#sending-a-message-with-participant)
 - [Why Choose WhatsApp Baileys?](#why-choose-whatsapp-baileys)
 - [Technical Notes](#technical-notes)
 - [Support the Project](#support-the-project)
@@ -45,30 +45,30 @@ This library is highly suitable for building business bots, chat automation syst
 
 ## Installation
 
-\`\`\`bash
+```bash
 npm install @whiskeysockets/baileys
-\`\`\`
+```
 
-Add it to your \`package.json\`:
+Add it to your `package.json`:
 
-\`\`\`json
+```json
 {
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:syncxbails"
+    "@whiskeysockets/baileys": "github:xvnsync/xbails"
   }
 }
-\`\`\`
+```
 
 ---
 
 ## Import
 
-\`\`\`javascript
+```javascript
 const {
   default: makeWASocket,
   // Other Options
 } = require('@whiskeysockets/baileys');
-\`\`\`
+```
 
 ---
 
@@ -76,7 +76,7 @@ const {
 
 ### With QR Code
 
-\`\`\`javascript
+```javascript
 const {
   default: makeWASocket,
   Browsers
@@ -87,11 +87,11 @@ const client = makeWASocket({
   browser: Browsers.ubuntu('Chrome'),
   printQRInTerminal: true
 });
-\`\`\`
+```
 
 ### Connect With Pairing Code
 
-\`\`\`javascript
+```javascript
 const {
   default: makeWASocket,
   fetchLatestWAWebVersion,
@@ -109,28 +109,21 @@ const number = "628XXXXX";
 const code = await client.requestPairingCode(number.trim()); // Use (number, "XXXXXXXX") for custom pairing
 
 console.log("Ur pairing code : " + code);
-\`\`\`
+```
 
 ---
 
 ## Usage Examples
 
-### Sending a Message with Participant (ptcp: true)
+### Sending a Message with Participant
 
-\`\`\`javascript
-const jid = "628XXXXX@s.whatsapp.net";
-
-await client.sendMessage(jid, {
-  text: "Hello from Baileys!"
+```javascript
+await client.sendMessage(m.chat, {
+  text: "XvnSynC"
 }, {
-  participant: {
-    jid: jid,
-    ptcp: true
-  }
+  ptcp: true
 });
-\`\`\`
-
-> Set \`ptcp: true\` on the \`participant\` object when the message needs to be attributed to a specific participant context (e.g. group/community sends) instead of the default sender identity.
+```
 
 ---
 

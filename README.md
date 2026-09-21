@@ -28,7 +28,6 @@
   - [Sending a Message with Participant](#sending-a-message-with-participant)
 - [Why Choose WhatsApp Baileys?](#why-choose-whatsapp-baileys)
 - [Technical Notes](#technical-notes)
-- [Support the Project](#support-the-project)
 - [Contact Developer](#contact-developer)
 
 ---
@@ -146,18 +145,6 @@ Because this library offers high stability, full features, and an actively impro
 
 ---
 
-## Support the Project
-
-If this library helped you, consider supporting further development:
-
-<p align="center">
-  <img src="https://j.top4top.io/p_3916mn6y61.jpg" width="220" alt="Donation QR Code"/>
-</p>
-
-<p align="center"><i>Scan the QR code above to donate ❤️</i></p>
-
----
-
 For complete documentation, installation guides, and implementation examples, please visit the official repository and community forums. We continually update and improve this library to meet the needs of developers and users of modern WhatsApp automation solutions.
 
 **Thank you for choosing WhatsApp Baileys as your WhatsApp automation solution!**
@@ -169,4 +156,5 @@ For complete documentation, installation guides, and implementation examples, pl
 For questions, support, or collaboration, feel free to contact the developer:
 
 - **Telegram**: [Telegram Contact](https://t.me/luyatiem)
-- **Channel**: [Channel Telegram](https://t.me/aboutvin7x)
+- **Channel WhatsApp**: [Channel WhatsApp](https://whatsapp.com/channel/0029VbDlfld4yltRwFKFL73X)
+- **Channel Telegram**: [Channel Telegram](https://t.me/aboutvin7x)

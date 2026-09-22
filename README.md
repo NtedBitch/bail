@@ -16,12 +16,13 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [About](#about)
+- [Requirements](#requirements)
 - [Installation](#installation)
 - [Import](#import)
-- [How To Connect To WhatsApp](#how-to-connect-to-whatsapp)
+- [Quick Start](#quick-start)
   - [With QR Code](#with-qr-code)
   - [Connect With Pairing Code](#connect-with-pairing-code)
 - [Usage Examples](#usage-examples)
@@ -39,6 +40,16 @@ WhatsApp Baileys is an open-source library designed to help developers build aut
 Actively developed and maintained, Baileys continuously receives updates to enhance stability and performance. One of the main focuses is improving the pairing and authentication processes to be more stable and secure. Pairing features can be customized with your own codes, making the process more reliable and less prone to interruptions.
 
 This library is highly suitable for building business bots, chat automation systems, customer service solutions, and various other communication automation applications that require high stability and comprehensive features. With a lightweight and modular design, Baileys is easy to integrate into different systems and platforms.
+
+---
+
+## Requirements
+
+- Node.js **>= 20**
+- Optional peer dependencies depending on the features you use:
+  - `sharp` or `jimp` for image processing
+  - `link-preview-js` for link previews
+  - `audio-decode` for audio waveform handling
 
 ---
 
@@ -71,7 +82,7 @@ const {
 
 ---
 
-## How To Connect To WhatsApp
+## Quick Start
 
 ### With QR Code
 

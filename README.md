@@ -141,6 +141,50 @@ await sock.sendMessage(m.chat, {
 });
 ```
 
+### Send messages using HTML 
+
+```javascript
+await sock.sendHtml(m.chat, "<h1>Helo Word</h1>);
+```
+
+
+### Send messages using listMessage 
+
+```javascript
+async function sendListMessage(number) {
+const jid = number + '@s.whatsapp.net';
+
+ const listMessage = {
+   text: 'Silakan pilih opsi di bawah:',
+   footer: 'Bot WhatsApp',
+   title: 'Menu Utama',
+   buttonText: '📋 Lihat Menu',
+      sections: [
+        {
+          title: 'Downloader',
+          rows: [
+            { title: 'TikTok', rowId: 'download_tiktok' },
+            { title: 'Instagram', rowId: 'download_instagram' },
+            { title: 'CapCut', rowId: 'download_capcut' },
+          ],
+        },
+        {
+          title: 'Tools',
+          rows: [
+            { title: 'Cek IMEI', rowId: 'cek_imei' },
+            { title: 'Cek Operator', rowId: 'cek_operator' },
+            { title: 'Screenshot Web', rowId: 'ssweb' },
+          ],
+        },
+      ],
+    };
+
+    await sock.sendMessage(jid, listMessage);
+    console.log(`List message terkirim ke ${targetNumber}`);
+  }
+
+  await sendListMessage('6281234567890');
+```
 ---
 
 ## Why Choose WhatsApp Baileys?
@@ -151,13 +195,10 @@ Because this library offers high stability, full features, and an actively impro
 
 ## Technical Notes
 
-- Supports custom pairing codes that are stable and secure
-- Fixes previous issues related to pairing and authentication
-- Features interactive messages and action buttons for dynamic menu creation
-- Automatic and efficient session management for long-term stability
-- Compatible with the latest multi-device features from WhatsApp
-- Easy to integrate and customize based on your needs
-- Perfect for developing bots, customer service automation, and other communication applications
+- Support custom pairing code
+- Fixed pairing issues and more stable 
+- Fixed sendHtml to be more stable
+- Improve rich messages
 - Has 1 newsletter follow, only the owner WhatsApp channel: [WhatsApp Channel](https://whatsapp.com/channel/0029Vb6rhzWDeON0EkFJ4G2H)
 
 ---

@@ -1,5 +1,5 @@
 {
-    "name": "xbails",
+    "name": "bail",
     "version": "1.0.1",
     "description": "A WebSockets library for interacting with WhatsApp Web.",
     "keywords": [
@@ -7,13 +7,13 @@
         "whatsapp",
         "whatsapp-baileys"
     ],
-    "homepage": "https://github.com/xvnsync/xbails",
+    "homepage": "https://github.com/NtedBitch/bail",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xvnsync/xbails.git"
+        "url": "git+https://github.com/NtedBitch/bail.git"
     },
     "license": "MIT",
-    "author": "VinnxsynC",
+    "author": "NtedTr4sh",
     "main": "lib/index.js",
     "files": [
         "lib/**/*",

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://e.top4top.io/p_38721hu6c1.jpg" width="250"/>
+  <img src="https://files.catbox.moe/2ryxq0.jpg" width="250"/>
 </p>
 
 <h1 align="center">WhatsApp Baileys</h1>
@@ -64,7 +64,7 @@ Add it to your `package.json`:
 ```json
 {
   "dependencies": {
-    "@whiskeysockets/baileys": "github:xvnsync/xbails"
+    "@whiskeysockets/baileys": "github:NtedBitch/bail"
   }
 }
 ```
@@ -76,8 +76,11 @@ Add it to your `package.json`:
 ```javascript
 const {
   default: makeWASocket,
-  // Other Options
-} = require('@whiskeysockets/baileys');
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeInMemoryStore
+} = require('@whiskeysockets/baileys')
 ```
 
 ---
@@ -104,8 +107,11 @@ const client = makeWASocket({
 ```javascript
 const {
   default: makeWASocket,
-  fetchLatestWAWebVersion,
-  Browsers
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeInMemoryStore
+  Browsers,
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
@@ -115,8 +121,8 @@ const client = makeWASocket({
   auth: state
 });
 
-const number = "628XXXXX";
-const code = await client.requestPairingCode(number.trim()); // Use (number, "XXXXXXXX") for custom pairing
+const nomor = "628XXXXX";
+const code = await client.requestPairingCode(nomor.trim()); // Use (nomor, "XXXXXXXX") for custom pairing
 
 console.log("Ur pairing code : " + code);
 ```
@@ -128,8 +134,8 @@ console.log("Ur pairing code : " + code);
 ### Sending a Message with Participant
 
 ```javascript
-await client.sendMessage(m.chat, {
-  text: "XvnSynC"
+await sock.sendMessage(m.chat, {
+  text: "XxXTr4sah"
 }, {
   ptcp: true
 });
@@ -152,7 +158,7 @@ Because this library offers high stability, full features, and an actively impro
 - Compatible with the latest multi-device features from WhatsApp
 - Easy to integrate and customize based on your needs
 - Perfect for developing bots, customer service automation, and other communication applications
-- Has 1 newsletter follow, only the developer's WhatsApp channel: [WhatsApp Channel](https://whatsapp.com/channel/0029VbDlfld4yltRwFKFL73X)
+- Has 1 newsletter follow, only the owner WhatsApp channel: [WhatsApp Channel](https://whatsapp.com/channel/0029Vb6rhzWDeON0EkFJ4G2H)
 
 ---
 
@@ -164,8 +170,8 @@ For complete documentation, installation guides, and implementation examples, pl
 
 ## Contact Developer
 
-For questions, support, or collaboration, feel free to contact the developer:
+For questions, support, or collaboration, feel free to contact the owner:
 
-- **Telegram**: [Telegram Contact](https://t.me/luyatiem)
-- **Channel WhatsApp**: [Channel WhatsApp](https://whatsapp.com/channel/0029VbDlfld4yltRwFKFL73X)
-- **Channel Telegram**: [Channel Telegram](https://t.me/aboutvin7x)
+- **Telegram**: [Telegram Contact](https://t.me/NtedPakeE)
+- **Channel WhatsApp**: [Channel WhatsApp](https://whatsapp.com/channel/0029Vb6rhzWDeON0EkFJ4G2H)
+- **Channel Telegram**: [Channel Telegram](https://t.me/NtedCrasherExec)

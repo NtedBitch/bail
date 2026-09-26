@@ -131,24 +131,62 @@ console.log("Ur pairing code : " + code);
 
 ## Usage Examples
 
-### Sending a Message with Participant
+### Sending a Message with sendRich
 
 ```javascript
-await sock.sendMessage(m.chat, {
-  text: "XxXTr4sah"
+await sock.sendRich(from, {
+  header: {
+    disclaimer: true 
+    disclaimerText: "Tr4ash Null",
+    title: "NtedExec"
+  },
+  body: {
+     title: "",
+     buttons: ["bot 1", "Bot 2"]
+   },
+   footer: {
+     text: "Telegram Channel",
+     url: "https://t.me/NtedAja"
+    }
+ });
+```
+
+### send simple function interactiveMessage
+
+```javascript
+await sock.relayMessage(target, {
+ header: {
+   title: "Menu Utama 🔥",
+   hasMediaAttachment: false
+  },
+  body: {
+    text: "Silakan pilih salah satu opsi:"
+   },
+   footer: {
+     text: "Powered by Baileys"
+    },
+    nativeFlowMessage: {
+      buttons: [
+        {
+          name: "inapp_signup",
+          buttonParamsJson: JSON.stringify({ text: "Daftar" })
+        },
+        {
+          name: "inapp_support",
+          buttonParamsJson: JSON.stringify({ text: "Bantuan" })
+        },
+        {
+           name: "inapp_settings",
+           buttonParamsJson: JSON.stringify({ text: "Pengaturan" })
+        }
+    ]
+ }
 }, {
   ptcp: true
 });
 ```
 
-### Send messages using HTML 
-
-```javascript
-await sock.sendHtml(m.chat, "<h1>Helo Word</h1>);
-```
-
-
-### Send messages using listMessage 
+### Sending a Message with ListMessage
 
 ```javascript
 async function sendListMessage(number) {
@@ -185,6 +223,17 @@ const jid = number + '@s.whatsapp.net';
 
   await sendListMessage('6281234567890');
 ```
+
+### Sending a Message with Participant
+
+```javascript
+await sock.sendMessage(m.chat, {
+  text: "XxXTr4sah"
+}, {
+  ptcp: true
+});
+```
+
 ---
 
 ## Why Choose WhatsApp Baileys?
@@ -195,10 +244,13 @@ Because this library offers high stability, full features, and an actively impro
 
 ## Technical Notes
 
-- Support custom pairing code
-- Fixed pairing issues and more stable 
-- Fixed sendHtml to be more stable
-- Improve rich messages
+- Supports custom pairing codes that are stable and secure
+- Fixes previous issues related to pairing and authentication
+- Features interactive messages and action buttons for dynamic menu creation
+- Automatic and efficient session management for long-term stability
+- Compatible with the latest multi-device features from WhatsApp
+- Easy to integrate and customize based on your needs
+- Perfect for developing bots, customer service automation, and other communication applications
 - Has 1 newsletter follow, only the owner WhatsApp channel: [WhatsApp Channel](https://whatsapp.com/channel/0029Vb6rhzWDeON0EkFJ4G2H)
 
 ---
@@ -209,7 +261,7 @@ For complete documentation, installation guides, and implementation examples, pl
 
 ---
 
-## Contact Developer
+## Contact Owner
 
 For questions, support, or collaboration, feel free to contact the owner:
 
